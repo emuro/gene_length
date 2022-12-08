@@ -1,0 +1,16 @@
+#
+# Default ignored files (Pycharm ide)
+/venv/
+/geneLength/venv/
+/PycharmProjects/geneLength/venv/
+/shelf/
+/workspace.xml
+#
+#    
+.idea    
+.DS_Store
+*~
+# *~ are for emacs files
+#
+__pycache__
+*.pyc
