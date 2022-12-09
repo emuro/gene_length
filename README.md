@@ -5,7 +5,7 @@ This a repository that contains the code needed to reproduce the results reporte
 
 ---
 ### The data can be downloaded from the next repositories:
-The protein coding gene annotations were obtained from the next webservers from Ensembl for [vertebrates](https://www.ensembl.org), [metazoa](https://metazoa.ensembl.org), [plants](https://plants.ensembl.org), [fungi](https://fungi.ensembl.org), [protists](https://protists.ensembl.org), and [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org):  
+The protein coding gene annotations were obtained from different webservers from Ensembl for [vertebrates](https://www.ensembl.org), [metazoa](https://metazoa.ensembl.org), [plants](https://plants.ensembl.org), [fungi](https://fungi.ensembl.org), [protists](https://protists.ensembl.org), and [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org):  
 
 | Ensembl ftp site by Kingdom/division                                          | Release            |  
 | :---------------------------------------------------------------------------  | -----------------: |  
