@@ -1,18 +1,20 @@
 # gene_length:
-## The emergence of eukaryotes signaled by a critical protein-to-gene length ratio
+## The emergence of eukaryotes signaled by a critical protein-to-gene length ratio  
 
-In this document we explain how to obtain from public repositories the data and we present the code to reproduce the reported results from our work.
+This a repository for the code needed to reproduce the reported results of our work. We explain as well, how to obtain the data from available databases the data to produce those results.  
 
 ---
-### The data has been obtained from public repositories:
-Protein coding gene annotations from Ensembl for [vertebrates](https://www.ensembl.org), 
-[metazoa](https://metazoa.ensembl.org), [plants](https://plants.ensembl.org), [fungi](https://fungi.ensembl.org), [protists](https://protists.ensembl.org), and [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org):
+### The data has been obtained from the next repositories:
+The protein coding gene annotations have been downloaded from Ensembl for [vertebrates](https://www.ensembl.org), 
+[metazoa](https://metazoa.ensembl.org), [plants](https://plants.ensembl.org), [fungi](https://fungi.ensembl.org), [protists](https://protists.ensembl.org), and [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org):  
 
 | Ensembl ftp site by Kingdom/division                                          | Release            |  
-| :---------------------------------------------------------------------------  | -----------------: | 
-| [prokaryotes: archaea, bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/) | ensemblgenomes 49  | 
-| [protists](http://ftp.ensemblgenomes.org/pub/protists/)                       | ensemblgenomes 49  | 
-| [plants](http://ftp.ensemblgenomes.org/pub/plants/)                           | ensemblgenomes 49  | 
-| [fungi](http://ftp.ensemblgenomes.org/pub/fungi/)                             | ensemblgenomes 49  | 
-| [metazoa](http://ftp.ensemblgenomes.org/pub/metazoa/)                         | ensemblgenomes 49  | 
-| [vertebrates](https://ftp.ensembl.org/pub/)                                   | ensembl 98         | 
+| :---------------------------------------------------------------------------  | -----------------: |  
+| [prokaryotes: archaea, bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/) | ensemblgenomes 49  |  
+| [protists](http://ftp.ensemblgenomes.org/pub/protists/)                       | ensemblgenomes 49  |  
+| [plants](http://ftp.ensemblgenomes.org/pub/plants/)                           | ensemblgenomes 49  |  
+| [fungi](http://ftp.ensemblgenomes.org/pub/fungi/)                             | ensemblgenomes 49  |  
+| [metazoa](http://ftp.ensemblgenomes.org/pub/metazoa/)                         | ensemblgenomes 49  |  
+| [vertebrates](https://ftp.ensembl.org/pub/)                                   | ensembl 98         |  
+
+# The proteomes have been downloaded from Uniprot:  
