@@ -1,7 +1,7 @@
-# gene_length:
+\# gene_length:
 ## The emergence of eukaryotes signaled by a critical protein-to-gene length ratio  
 
-This a repository for the code needed to reproduce the reported results of our work. We explain as well, how to obtain the data from available databases the data to produce those results.  
+This a repository of the code needed to reproduce the results reported in our work. We explain as well, how to obtain the data necessary to produce those results.  
 
 ---
 ### The data has been obtained from the next repositories:
