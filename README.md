@@ -9,8 +9,8 @@ results.
 ### The data can be downloaded from the next repositories:
 The protein coding gene annotations were obtained from different Ensembl's webservers 
 for [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org), 
-[protists](https://protists.ensembl.org), [fungi](https://fungi.ensembl.org), 
-[plants](https://plants.ensembl.org), [metazoa](https://metazoa.ensembl.org), 
+[protists](https://protists.ensembl.org), [plants](https://plants.ensembl.org), 
+[plants](https://plants.ensembl.org),[fungi](https://fungi.ensembl.org), [metazoa](https://metazoa.ensembl.org), 
 [vertebrates](https://www.ensembl.org).  
 
 
