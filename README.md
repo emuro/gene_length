@@ -25,8 +25,8 @@ for [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org),
 | [metazoa](http://ftp.ensemblgenomes.org/pub/metazoa/)                         | ensemblgenomes 49  |  
 | [vertebrates](https://ftp.ensembl.org/pub/)                                   | ensembl 98         |  
 
-The original directory structure of the FTP Ensembl repositories was preserved.   
-For instance, for Homo sapiens (UPID: UP000005640 and taxonomy id:9606): 
+The GTF (General Transfer Format) gene annotation files were downloaded preserving the 
+original directory structure of the FTP Ensembl repositories. For instance, for _Homo sapiens_: 
 ```
 Homo_sapiens.GRCh38.98.gtf.gz @
 our_mount_dir + data/compressed/ + "ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/"
@@ -46,7 +46,7 @@ The reference proteomes for the different taxonomical divisions provided by Ense
 [Uniprot FTP repository](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/) on 28.5.2021. 
 For each species, a fasta file containing its reference proteome was downloaded. 
 The original directory structure of the FTP repository was preserved.   
-For instance, for Homo sapiens (UPID: UP000005640 and taxonomy id:9606): 
+For instance, for _Homo sapiens_ (UPID: UP000005640 and taxonomy id:9606): 
 ```
 UP000005640_9606.fasta.gz @
 our_mount_dir + /data/compressed/ + "ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/"
