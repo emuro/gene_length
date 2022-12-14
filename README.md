@@ -80,8 +80,8 @@ stat_proteins.tsv (one header line + 9,915 entries):
 | counts | regnum |  
 |-----:|:-------- |
 | 330  | archaea  |
-| 8002 | bacteria |
-| 1589 | eukaryota |
+| 7997 | bacteria |
+| 1588 | eukaryota |
 9915 entries in total
 
 stat_merged.tsv (one header line + 6,521 entries):
