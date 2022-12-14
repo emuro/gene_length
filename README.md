@@ -6,9 +6,9 @@ in our article; we start explaining how to obtain the data necessary to produce 
 results.  
 
 The structure of this repository:
-1.- README.md This file, that guides you all over the repository
-2.- main_tables where the tables needed to reproduce our results is 
-3.- main_work contains the software needed to reproduce the main results/figures of our work is. This directory contains main_suppl, where the programs for the supplementary material are.
+ 1.- README.md This file, that guides you all over the repository
+ 2.- main_tables where the tables needed to reproduce our results is 
+ 3.- main_work contains the software needed to reproduce the main results/figures of our work is. This directory contains main_suppl, where the programs for the supplementary material are.
 
 ---
 ### Data: the annotations were downloaded from public repositories:
