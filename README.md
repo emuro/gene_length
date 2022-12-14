@@ -27,7 +27,7 @@ for [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org),
 
 The gzip compressed *.gtf.gz (General Transfer Format) gene annotation files were downloaded 
 for the different species preserving the directories' structure of the FTP Ensembl 
-repositories. For instance, the annotation file of _Homo sapiens_was downloaded at 
+repositories. For instance, the annotation file of _Homo sapiens_ was downloaded at 
 ```
 Homo_sapiens.GRCh38.98.gtf.gz @
 our_mnt_dir + data/compressed/ + "ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/"
