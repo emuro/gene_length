@@ -69,15 +69,17 @@ For protein coding genes, proteins, and the intersection set between them (merge
 
 #### The files contains the next number of entries per taxonomical division:
 stat_protCodGenes.tsv (one header line + 33,629 entries):
-| counts | regnum      |  
-|-----:  |:----------  |
-| 31943  | bacteria    |
+| counts | regnum               |  
+|-----:  |:----------           |
+| 31943  | bacteria<sup>*</sup> |
 | 237    | protists    |
 | 96     | plants      |
 | 1014   | fungi       |
 | 115    | metazoa     |
 | 224    | vertebrates |
-33629 entries in total
+33629 entries in total  
+
+<sup>*</sup>In the annotation from Ensembl bacteria includes also archaea.
 
 stat_proteins.tsv (one header line + 9,915 entries):
 | counts | regnum |  
@@ -96,7 +98,9 @@ stat_merged.tsv (one header line + 6,521 entries):
 | 533    | fungi       |
 | 49     | metazoa     |
 | 94     | vertebrates |
-6521 entries in total
+6521 entries in total  
+
+<sup>*</sup>In the annotation from Ensembl bacteria includes also archaea.
 
 ---
 ### main_work
