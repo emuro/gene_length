@@ -107,7 +107,7 @@ stat_merged.tsv (one header line + 6,521 entries):
 <sup>*</sup>In the annotation from Ensembl bacteria includes also archaea.
 
 ### extra_tables
-- species_Ensembl.tsv. For each division, the files containing the taxonomy ids of the different species annotated in Ensembl, see above, have been downloaded. The files have been concatenated and the columns reduced to its columns 1 and 4 (name of the species and taxonomy_id).
+- species_Ensembl.tsv. For each division, the files containing the taxonomy ids of the different species annotated in Ensembl, see above, have been downloaded. The files have been concatenated and the columns reduced to its columns 1, 2, and 4 (name of the species and taxonomy_id).
 
 ---
 ### main_work
