@@ -1,14 +1,14 @@
 # gene_length
 ## The emergence of eukaryotes signaled by a critical protein-to-gene length ratio
 
-This a repository that contains the code needed to reproduce the results reported 
+This repository contains the data and programs needed to reproduce the results reported 
 in our article; we start explaining how to obtain the data necessary to produce those 
 results.  
 
-The structure of this repository:
- - README.md This file, that guides you all over the repository
- - main_tables where the tables needed to reproduce our results is 
- - main_work contains the software needed to reproduce the main results/figures of our work is. This directory contains main_suppl, where the programs for the supplementary material are.
+**The structure of this repository:**  
+ - **README.md** This file, that guides you all over the repository
+ - **main_tables** where the tables needed to reproduce our results is 
+ - **main_work** contains the software needed to reproduce the main results/figures of our work is. This directory contains main_suppl, where the programs for the supplementary material are.
 
 ---
 ### Data: the annotations were downloaded from public repositories:
