@@ -5,8 +5,13 @@ This a repository that contains the code needed to reproduce the results reporte
 in our article; we start explaining how to obtain the data necessary to produce those 
 results.  
 
+The structure of this repository:
+1.- README.md This file, that guides you all over the repository
+2.- main_tables where the tables needed to reproduce our results is 
+3.- main_work contains the software needed to reproduce the main results/figures of our work is. This directory contains main_suppl, where the programs for the supplementary material are.
+
 ---
-### The annotations (data) were downloaded from public repositories:
+### Data: the annotations were downloaded from public repositories:
 
 #### Genes
 The protein coding gene annotations were obtained from different Ensembl's webservers 
@@ -54,14 +59,40 @@ our_mnt_dir + /data/compressed/ + "ftp.uniprot.org/pub/databases/uniprot/current
 ```
 
 
+---
+### main_tables
+For protein coding genes, proteins, and the intersection set between them (merged). The files (*.tsv) are provided in standard [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values).
+- stat_protCodGenes.tsv (one header line + 33,629 entries)
+- stat_proteins.tsv (one header line + 9,915 entries)
+- stat_merged (one header line + 6,521 entries)
 
-# Añadir esta tabla a las principales. Hace falta una tabla para genes.
+
+#### The files contains the next number of entries per taxonomical division:
+stat_protCodGenes.tsv (one header line + 33,629 entries):
+| counts | regnum |  
+|-----:|:-------- |
+| x | bacteria  |
+| y | protists  |
+| z | ...       |
+33629 entries in total
+
+stat_proteins.tsv (one header line + 9,915 entries):
 | counts | regnum |  
 |-----:|:-------- |
 | 330  | archaea  |
 | 8002 | bacteria |
 | 1589 | eukaryota |
-19860 species in total
+9915 entries in total
+
+stat_merged.tsv (one header line + 6,521 entries):
+| counts | regnum | 
+|-----:|:-------- |
+| x | bacteria  |
+| y | protists  |
+| z | ...       |
+6521 entries in total
 
 
-
+---
+### main_work
+bla, bla, bla
