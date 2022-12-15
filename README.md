@@ -111,4 +111,5 @@ stat_merged.tsv (one header line + 6,521 entries):
 
 ---
 ### main_work
-bla, bla, bla
+- protCodGene_lognormDist.ipynb and protein_lognormDist.ipynb: Fig.1 (also S1, S2, and S7)
+
