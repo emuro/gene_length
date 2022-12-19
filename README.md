@@ -8,7 +8,7 @@ in our article: how to obtain the annotations from public repositories, main tab
  - **README.md** guides you all over this repository
  - **main_tables** needed to reproduce the main results  
          -**extra_tables** for the supplementary material and extra information that can be quite helpful (ie. taxonomical ids)
- - **main_work** containing the software needed to reproduce the main results of our work is. This directory also contains:   
+ - **main_work** containing the software needed to reproduce the main results of our work is   
          - **main_suppl**, where the programs for the supplementary material are.
 
 ---
