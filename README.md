@@ -66,10 +66,13 @@ The taxonomy id of each species has been downloaded from Ensembl for each divisi
 
 ---
 ### main_tables
-For protein coding genes, proteins, and the intersection set between them (merged). The files are provided in standard [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) (*.tsv).
+For protein coding genes, proteins, and the intersection set between them (merged). The files are provided in standard [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) (*.tsv):
 - stat_protCodGenes.tsv (one header line + 33,629 entries)
 - stat_proteins.tsv (one header line + 9,915 entries)
-- stat_merged (one header line + 6,521 entries)
+- stat_merged (one header line + 6,521 entries)  
+
+Mean gene length vs. rho (fraction of nCDS within the protein coding genes). The entries are ordered by ascending mean gene length:  
+- rho_vs_gene.dat 
 
 #### **Number of entries per taxonomical division:**  
 stat_protCodGenes.tsv (one header line + 33,629 entries):
@@ -106,10 +109,21 @@ stat_merged.tsv (one header line + 6,521 entries):
 | 94     | vertebrates |
 6521 entries in total  
 
-### extra_tables
-- species_Ensembl.tsv. For each division, the file containing the taxonomy ids of the different species annotated in Ensembl, [see above](./README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl), has been downloaded. The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally the file has been slimmed-down reducing its columns to cols 1, 2, and 4; that is, colloquial name of the species, species name, and taxonomy_id.
+#### extra_tables
+- species_Ensembl.tsv. For each division, the file containing the taxonomy ids of the different species annotated in Ensembl, [see above](./README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl), has been downloaded. The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally the file has been slimmed-down reducing its columns to cols 1, 2, and 4; that is, colloquial name of the species, species name, and taxonomy_id.  
+- genes.xlsx, proteins.xlsx, and genes_proteins_combined.xlsx. The main_tables in Microsoft Excel format, for the sake of those that prefer this software. From these tables, the main results can be reproduced.  
+- 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480
+- clade_fraction_per_mean_length.xlsx data to represent Figs. S8 and S9
+- Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Fig. S10
 
 ---
 ### main_work
-- protCodGenes_lognormDist.ipynb and proteins_lognormDist.ipynb: the distributions of the lengths of the protein coding genes and proteins, respectively. That is Fig.1 (also S1, S2, and S7)
-- protCodGenes_taylorLaw.ipynb and proteins_taylorLaw.ipynb: the observed Taylor law in the lengths distributions for the different species (variance vs mean in $log_{10}$ representation). That is, Fig. 2
+- protCodGenes_lognormDist.ipynb and proteins_lognormDist.ipynb: the distributions of the lengths of the protein coding genes and proteins, respectively. That is Fig.1 (also S1, S2, and S7)  
+- protCodGenes_taylorLaw.ipynb and proteins_taylorLaw.ipynb: the observed Taylor law in the distributions of lengths for the different species (variance vs mean in $log_{10}$ representation). That is, Fig. 2  
+- allowed_states.f: Fortran code that calculates the fraction of allowed states for the density of non-coding genetic sequences for a given mean gene length; see Fig. 4 
+ 
+#### suppl_work  
+- reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions compared in the figures. See, Figs. S3 and Fig. S4  
+- gene_growth_simulator.f for the sake of Fig. S5 and Fig. S10  
+- entropy.f: calculates the entropy of the allowed states of the unitary density on non-coding genetic sequences. See, Fig. S12  
+- variance.f: calculates the variance of the states of the unitary density on non-coding genetic sequences. See, Fig. S13  
