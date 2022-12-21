@@ -118,7 +118,7 @@ stat_merged.tsv (one header line + 6,521 entries):
 
 ---
 ### main_work
-- protCodGenes_lognormDist.ipynb and proteins_lognormDist.ipynb: the distributions of the lengths of the protein coding genes and proteins, respectively. That is Fig.1 (also S1, S2, and S7)  
+- [protCodGenes_lognormDist.ipynb and proteins](./main_work/protCodGenes_lognormDist.ipynb) and proteins_lognormDist.ipynb: the distributions of the lengths of the protein coding genes and proteins, respectively. That is Fig.1 (also S1, S2, and S7)  
 - protCodGenes_taylorLaw.ipynb and proteins_taylorLaw.ipynb: the observed Taylor law in the distributions of lengths for the different species (variance vs mean in $log_{10}$ representation). That is, Fig. 2  
 - relation_proteins_protCodGenes_lengths.ipynb. Threshold in the relationship between mean protein and protein coding gene lengths for the different species for which we have records in both proteins and protein coding genes. See Fig. 3. 
 - rho_nCDS_within_protCodGenes_lengths.ipynb. Second-order phase transition in the density of non-coding sequences within protein coding genes. Each dot represents a single species for which we have records in both proteins and protein coding genes, see Fig. 4 
