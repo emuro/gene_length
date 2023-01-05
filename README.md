@@ -1,5 +1,5 @@
 # gene_length
-## The emergence of eukaryotes signaled by a critical protein-to-gene length ratio
+## The emergence of eukaryotes as an evolutionary algorithmic phase transition
 
 This repository contains the data and programs needed to reproduce the results reported 
 in our article: how to obtain the annotations from public repositories, main tables and programs to reproduce the results.  
