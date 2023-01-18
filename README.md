@@ -65,17 +65,23 @@ The taxonomy id of each species has been downloaded from Ensembl for each divisi
 [vertebrates](https://ftp.ensembl.org/pub/release-98/species_EnsemblVertebrates.txt).  
 
 ---
+#### The lengths for protein coding genes and proteins
+that we calculated can be accessed from our server: 
+
+[https://genford.uv.es:5001/sharing/P79EcUfhE](https://genford.uv.es:5001/sharing/P79EcUfhE)
+
+---
 ### main_tables
 For protein coding genes, proteins, and the intersection set between them (merged). The files are provided in standard [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) (*.tsv):
-- stat_protCodGenes.tsv (one header line + 33,629 entries)
-- stat_proteins.tsv (one header line + 9,915 entries)
-- stat_merged (one header line + 6,521 entries)  
+- stat_protCodGenes.tsv (one header line + 33,627 entries)
+- stat_proteins.tsv (one header line + 9,913 entries)
+- stat_merged (one header line + 6,519 entries)  
 
 Mean gene length vs. rho (fraction of nCDS within the protein coding genes). The entries are ordered by ascending mean gene length:  
 - rho_vs_gene.dat 
 
 #### **Number of entries per taxonomical division:**  
-stat_protCodGenes.tsv (one header line + 33,629 entries):
+stat_protCodGenes.tsv (one header line + 33,627 entries):
 | counts | regnum               |  
 |-----:  |:----------           |
 | 31943  | bacteria<sup>*</sup> |
@@ -83,22 +89,22 @@ stat_protCodGenes.tsv (one header line + 33,629 entries):
 | 96     | plants      |
 | 1014   | fungi       |
 | 115    | metazoa     |
-| 224    | vertebrates |
-33629 entries in total  
+| 222    | vertebrates |
+33627 entries in total  
 
 <sup>*</sup>In the annotation from Ensembl Bacteria includes also Archaea.
 
-stat_proteins.tsv (one header line + 9,915 entries):
+stat_proteins.tsv (one header line + 9,913 entries):
 | counts | regnum |  
 |-----:|:-------- |
 | 330  | archaea  |
 | 7997 | bacteria |
-| 1588 | eukaryota<sup>*</sup> |
-9915 entries in total
+| 1586 | eukaryota<sup>*</sup> |
+9913 entries in total
 
 <sup>*</sup>In the annotations from Uniprot, Eukaryota includes all the clades described above: protists, plants, fungi, metazoa, vertebrates.  
 
-stat_merged.tsv (one header line + 6,521 entries):
+stat_merged.tsv (one header line + 6,519 entries):
 | counts | regnum      |  
 |-----:  |:----------  |
 | 5695   | bacteria    |
@@ -106,8 +112,8 @@ stat_merged.tsv (one header line + 6,521 entries):
 | 59     | plants      |
 | 533    | fungi       |
 | 49     | metazoa     |
-| 94     | vertebrates |
-6521 entries in total  
+| 92     | vertebrates |
+6519 entries in total  
 
 #### extra_tables
 - species_Ensembl.tsv. For each division, the file containing the taxonomy ids of the different species annotated in Ensembl, [see above](./README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl), has been downloaded. The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally the file has been slimmed-down reducing its columns to cols 1, 2, and 4; that is, colloquial name of the species, species name, and taxonomy_id.  
