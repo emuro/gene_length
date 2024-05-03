@@ -139,7 +139,7 @@ stat_merged.tsv (header line + 6519 entries):
 
 - [proteins__2nd_order_momentum.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/proteins__2nd_order_momentum.ipynb). The same for proteins, that is the observed generalized Taylor law for the protein length's distributions for the different species:  $(\sigma_{p}^{2} + \langle L_{p}\rangle^{2})$ vs $\langle L_{p} \rangle$ in $log_{10}$ representation; the second order momentum $\langle L_{p}^{2} \rangle$. See Extended Data Fig. 4 that complements the main Fig 2.  
 
-- [protCodGenes_meanOfLog_logOfMean.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/protCodGenes_meanOfLog_logOfMean.ipynb). Comparison for the protein coding gene length's distributions for the different genomes between: the mean of the log of the lengths, $\langle log L \rangle$ , and the log of the mean of lengths, $log \langle L \rangle$, in $log_{10}$ representation; it corresponds to the Extended Data Fig. 5.  
+- [meanOfLog_logOfMean.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanOfLog_logOfMean.ipynb). Comparison for the protein coding gene length's distributions for the different genomes between: the mean of the log of the lengths, $\langle log L \rangle$ , and the log of the mean of lengths, $log \langle L \rangle$, in $log_{10}$ representation; it corresponds to the Extended Data Fig. 5.  
 
  - [average_mean_lengths__order.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a. Order of the average mean gene lengths for the different groups of organisms; Fig S6b. Same representations for the average protein gene lengths.  
 
