@@ -115,7 +115,7 @@ stat_merged.tsv (header line + 6519 entries):
 - proteins_averageLp_perGoOrg.txt. Groups of organisms with at least 20 species (to compare with proteomes) and the average $< L_{p} >$ of each group in amino acids.
 
 #### suppl_tables__extra
-- species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/borrador/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
+- species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/gene_length/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
 
 - 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480.
 
@@ -123,27 +123,27 @@ stat_merged.tsv (header line + 6519 entries):
 
 ---
 ### main_work
-- [protCodGenes_lognormDist.ipynb](https://github.com/emuro/borrador/blob/main/main_work/protCodGenes_lognormDist.ipynb) and [proteins_lognormDist.ipynb](https://github.com/emuro/borrador/blob/main/main_work/proteins_lognormDist.ipynb): the distributions of the lengths of the protein coding genes (genes hereafter) and proteins respectively. See Fig.1, also Extended Data Figs. 1 and 7.  
+- [protCodGenes_lognormDist.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/protCodGenes_lognormDist.ipynb) and [proteins_lognormDist.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/proteins_lognormDist.ipynb): the distributions of the lengths of the protein coding genes (genes hereafter) and proteins respectively. See Fig.1, also Extended Data Figs. 1 and 7.  
 
-- [protCodGenes_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/protCodGenes_taylorLaw.ipynb) and [proteins_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/proteins_taylorLaw.ipynb): the observed Taylor law in the distributions of the lengths of genes and proteins (variance vs mean in $log_{10}$ representation) for the different species. See Fig. 2 and Extended Data Fig. 4.  
+- [protCodGenes_taylorLaw.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/protCodGenes_taylorLaw.ipynb) and [proteins_taylorLaw.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/proteins_taylorLaw.ipynb): the observed Taylor law in the distributions of the lengths of genes and proteins (variance vs mean in $log_{10}$ representation) for the different species. See Fig. 2 and Extended Data Fig. 4.  
 
-- [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb): threshold in the relationship between the mean gene length and the mean protein length for the different species. See Fig. 3 and Extended Data Fig. 9.  
+- [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb): threshold in the relationship between the mean gene length and the mean protein length for the different species. See Fig. 3 and Extended Data Fig. 9.  
 
-- [rho_nCDS_within_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/rho_nCDS_within_protCodGenes_lengths.ipynb). Second-order phase transition in the density ($\rho$) of non-coding sequences within protein coding genes with the mean gene length as control parameter. See Fig. 4. 
+- [rho_nCDS_within_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/rho_nCDS_within_protCodGenes_lengths.ipynb). Second-order phase transition in the density ($\rho$) of non-coding sequences within protein coding genes with the mean gene length as control parameter. See Fig. 4. 
 - allowed_states.f. It calculates the allowed states of Fig. 4.
  
 #### suppl_work  
--  [mean_vs_time.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/mean_vs_time.ipynb). It is represented along the evolutionary history of life, the average the average of the mean gene lengths against their divergence time from LUCA (for the genomes that compose each group of organisms). Similarly, it is displayed the average (group of organisms) of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{\langle L \rangle}$ (nt) and $\overline{\langle log L \rangle}$ (nt) vs. divergence time from LUCA (My). See Extended Data Fig. 3.
+-  [mean_vs_time.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/mean_vs_time.ipynb). It is represented along the evolutionary history of life, the average the average of the mean gene lengths against their divergence time from LUCA (for the genomes that compose each group of organisms). Similarly, it is displayed the average (group of organisms) of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{\langle L \rangle}$ (nt) and $\overline{\langle log L \rangle}$ (nt) vs. divergence time from LUCA (My). See Extended Data Fig. 3.
  
-- [protCodGenes__2nd_order_momentum.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/protCodGenes__2nd_order_momentum.ipynb). The observed generalized Taylor law for the protein coding gene length's distributions for the different genomes:  ($\sigma_{g}^{2} + \langle L_{g} \rangle^{2}$) vs $\langle L_{g} \rangle$ in $log_{10}$ representation; the second order momentum $\langle L_{g}^{2} \rangle$. See Extended Data Fig. 4 that complements the main Fig 2.   
+- [protCodGenes__2nd_order_momentum.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/protCodGenes__2nd_order_momentum.ipynb). The observed generalized Taylor law for the protein coding gene length's distributions for the different genomes:  ($\sigma_{g}^{2} + \langle L_{g} \rangle^{2}$) vs $\langle L_{g} \rangle$ in $log_{10}$ representation; the second order momentum $\langle L_{g}^{2} \rangle$. See Extended Data Fig. 4 that complements the main Fig 2.   
 
-- [proteins__2nd_order_momentum.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/proteins__2nd_order_momentum.ipynb). The same for proteins, that is the observed generalized Taylor law for the protein length's distributions for the different species:  $(\sigma_{p}^{2} + \langle L_{p}\rangle^{2})$ vs $\langle L_{p} \rangle$ in $log_{10}$ representation; the second order momentum $\langle L_{p}^{2} \rangle$. See Extended Data Fig. 4 that complements the main Fig 2.  
+- [proteins__2nd_order_momentum.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/proteins__2nd_order_momentum.ipynb). The same for proteins, that is the observed generalized Taylor law for the protein length's distributions for the different species:  $(\sigma_{p}^{2} + \langle L_{p}\rangle^{2})$ vs $\langle L_{p} \rangle$ in $log_{10}$ representation; the second order momentum $\langle L_{p}^{2} \rangle$. See Extended Data Fig. 4 that complements the main Fig 2.  
 
-- [protCodGenes_meanOfLog_logOfMean.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/protCodGenes_meanOfLog_logOfMean.ipynb). Comparison for the protein coding gene length's distributions for the different genomes between: the mean of the log of the lengths, $\langle log L \rangle$ , and the log of the mean of lengths, $log \langle L \rangle$, in $log_{10}$ representation; it corresponds to the Extended Data Fig. 5.  
+- [protCodGenes_meanOfLog_logOfMean.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/protCodGenes_meanOfLog_logOfMean.ipynb). Comparison for the protein coding gene length's distributions for the different genomes between: the mean of the log of the lengths, $\langle log L \rangle$ , and the log of the mean of lengths, $log \langle L \rangle$, in $log_{10}$ representation; it corresponds to the Extended Data Fig. 5.  
 
- - [average_mean_lengths__order.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a. Order of the average mean gene lengths for the different groups of organisms; Fig S6b. Same representations for the average protein gene lengths.  
+ - [average_mean_lengths__order.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a. Order of the average mean gene lengths for the different groups of organisms; Fig S6b. Same representations for the average protein gene lengths.  
 
- - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths to Fungi (1014 genomes); it corresponds to the Extended Data Fig. 9a. Note: Fig. S9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
+ - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths to Fungi (1014 genomes); it corresponds to the Extended Data Fig. 9a. Note: Fig. S9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
 
 - reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions compared in the figures. See Extended Data Fig. 2.  
 
@@ -155,7 +155,7 @@ stat_merged.tsv (header line + 6519 entries):
 - gene_growth_simulator.f: example of simulator of gene growth using a multiplicative stochastic factor.
 
 <!---
-- [merged_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.
+- [merged_taylorLaw.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.
 ---!>
 
 
