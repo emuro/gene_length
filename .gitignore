@@ -9,8 +9,26 @@
 #    
 .idea    
 .DS_Store
+#
+.venv
+#
 *~
-# *~ are for emacs files
+*~ are for emacs files
+Lg_distribution__byClades.html
+#
+tmp/
+main_tables_1stSubmission/
+working_on_tables/
+more_tables/
+main_tables_fat/
+suppl_tables_fat/
+suppl_tables__extra_fat/
+suppl_work_workingOn/
+working_on_plots/
+cavia_porcellus/
+vertebrates_peak_evo/
+sensory_receptors.html
+# sensory_receptors.md
 #
 __pycache__
 *.pyc

@@ -1,0 +1,15 @@
+g_orgs	mean
+Archaea	273.916034
+Bacteria	319.333116
+Microsporidia	310.827261
+Saccharomycotina	484.444831
+Mucoromycota	397.025739
+Ascomycota except Saccharomycotina	472.226746
+Basidiomycota	444.358624
+protists	518.474686
+Viridiplantae	390.588279
+Arthropoda	449.669682
+Actinopterygii	527.731067
+Aves	450.480340
+Mammalia	542.905725
+Primates	525.864757

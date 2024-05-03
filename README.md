@@ -1,32 +1,24 @@
-# gene_length
-## The emergence of eukaryotes as an evolutionary algorithmic phase transition
+# The emergence of eukaryotes as an evolutionary algorithmic phase transition
 
-This repository contains the data and programs needed to reproduce the results reported 
-in our article: how to obtain the annotations from public repositories, main tables and programs to reproduce the results.  
+This repository contains the data and programs needed to reproduce the results reported in our article. Here, it is also described how to obtain the annotations used in this this work from public repositories.  
 
-**The structure of this repository:**  
- - **README.md** guides you all over this repository
- - **main_tables** needed to reproduce the main results  
-         - **extra_tables** for the supplementary material and extra information that can be quite helpful (ie. taxonomical ids)
- - **main_work** containing the software needed to reproduce the main results of our work is   
-         - **main_suppl**, where the programs for the supplementary material are.
+**README.md** guides you all over this repository. **The structure of this repository is the next:**   
+ - **main_tables** needed to reproduce the main figures.  
+        - **suppl_tables** for the supplementary material.  
+        - **suppl_tables__extra** contains some extra data that can be helpful (ie. taxonomical ids).
 
+ - **main_work** contains the programs needed to reproduce the main results.   
+        - **suppl_work**, where the programs for the supplementary material are.  
+        - **suppl_work__extra**, where some extra programs that complement the supplementary material are.
+
+- **gl_lib**  contains libs used by programs of this repository
 ---
-### Data: the annotations were downloaded from public repositories:
+### Data: the annotations were downloaded from public repositories
 
 #### Proteins
-[Reference proteomes](https://www.uniprot.org/proteomes/?query=*&fil=reference%3Ayes)
-were downloaded from [Uniprot](https://www.uniprot.org/). 
-Each proteome has a unique Uniprot-identifier (UPID). Also, 
-a [description](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/README) 
-of the proteomes, as well as a [table](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/README) 
-associating UPIDs, taxonomy_ids, species names, etc is available at Uniprot.
+The [reference proteomes](https://www.uniprot.org/proteomes/?query=*&fil=reference%3Ayes) were downloaded from the Universal Protein Resource ([Uniprot](https://www.uniprot.org/)). Each proteome has a unique Uniprot-identifier (UPID). A [description](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/README) of the proteomes is also provided. It contains a table with information on every proteome: UPIDs, taxonomy_ids, species names, etc. All the reference proteomes were downloaded from [Uniprot FTP repository](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/) on 28.5.2021. Note that viruses were not downloaded and that Uniprot is updated regularly, every eight weeks.  
 
-The reference proteomes for the different taxonomical divisions provided by Ensembl (Viruses were not considered) were downloaded from 
-[Uniprot FTP repository](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/) on 28.5.2021. 
-For each species, a fasta file containing its reference proteome was downloaded. 
-The directory structure of the FTP repository was preserved.   
-For instance, for _Homo sapiens_ (UPID: UP000005640 and taxonomy id:9606): 
+Then, for each species a fasta file containing its reference proteome was downloaded, preserving the directory structure of the repository. For instance, for _Homo sapiens_ (UPID: UP000005640 and taxonomy id:9606): 
 ```
 UP000005640_9606.fasta.gz @
 our_mnt_dir + /data/compressed/ + "ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/"
@@ -34,105 +26,138 @@ our_mnt_dir + /data/compressed/ + "ftp.uniprot.org/pub/databases/uniprot/current
 our_mnt_dir is the local directory where the data were downloaded.
 
 #### Protein coding genes 
-The gene annotations were obtained from different Ensembl's webservers 
-for [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org), [protists](https://protists.ensembl.org), [plants](https://plants.ensembl.org), [fungi](https://fungi.ensembl.org), [metazoa](https://metazoa.ensembl.org), 
-[vertebrates](https://www.ensembl.org).  
+The protein coding gene annotations were obtained from different webservers provided by Ensembl: [prokaryotes (Archaea, Bacteria)](https://bacteria.ensembl.org), [protists](https://protists.ensembl.org), [plants](https://plants.ensembl.org), [Fungi](http://fungi.ensembl.org/), [invertebrates](https://metazoa.ensembl.org), [vertebrates](https://ensembl.org/index.html). Any paraphyletic categorization in groups of organisms is already well established by Ensembl. 
 
 
 | Ensembl ftp site by Kingdom/division                                          | Release            |  
 | :---------------------------------------------------------------------------  | :----------------- |  
-| [prokaryotes: archaea, bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/) | ensemblgenomes 49  |  
+| [Archaea, Bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/) | ensemblgenomes 49  |  
 | [protists](http://ftp.ensemblgenomes.org/pub/protists/)                       | ensemblgenomes 49  |  
 | [plants](http://ftp.ensemblgenomes.org/pub/plants/)                           | ensemblgenomes 49  |  
-| [fungi](http://ftp.ensemblgenomes.org/pub/fungi/)                             | ensemblgenomes 49  |  
-| [metazoa](http://ftp.ensemblgenomes.org/pub/metazoa/)                         | ensemblgenomes 49  |  
-| [vertebrates](https://ftp.ensembl.org/pub/)                                   | ensembl 98         |  
+| [Fungi](http://ftp.ensemblgenomes.org/pub/fungi/)                             | ensemblgenomes 49  |  
+| [invertebrates](http://ftp.ensemblgenomes.org/pub/metazoa/)                   | ensemblgenomes 49  |  
+| [vertebrates (Vertebrata)](https://ftp.ensembl.org/pub/)                      | ensembl 98         |  
 
-The gzip compressed *.gtf.gz (General Transfer Format) gene annotation files were downloaded 
-for the different species preserving the directories' structure of the FTP Ensembl 
-repositories. For instance, for _Homo sapiens_: 
+The gzip compressed *.gtf.gz (General Transfer Format) gene annotation files were downloaded for the different species preserving the structure of the directories (FTP Ensembl repositories). For instance, for _Homo sapiens_: 
 ```
 Homo_sapiens.GRCh38.98.gtf.gz @
 our_mnt_dir + data/compressed/ + "ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/"
 ```
-our_mnt_dir is, as above, the local directory where the data were downloaded.
+our_mnt_dir is, as above, the local directory where all the data were downloaded.
 
 ##### Taxonomy ids of the different species annotated in Ensembl
-The taxonomy id of each species has been downloaded from Ensembl for each division: https://ftp.ensembl.org/pub/release-98/species_EnsemblVertebrates.txt
-[prokaryotes (archaea, bacteria)](http://ftp.ensemblgenomes.org/pub/bacteria/release-49/species_EnsemblBacteria.txt),
-[protists](http://ftp.ensemblgenomes.org/pub/protists/release-49/species_EnsemblProtists.txt), [plants](http://ftp.ensemblgenomes.org/pub/plants/release-49/species_EnsemblPlants.txt),
-[fungi](http://ftp.ensemblgenomes.org/pub/fungi/release-49/species_EnsemblFungi.txt), [metazoa](http://ftp.ensemblgenomes.org/pub/metazoa/release-49/species_EnsemblMetazoa.txt), 
-[vertebrates](https://ftp.ensembl.org/pub/release-98/species_EnsemblVertebrates.txt).  
+The taxonomy id of each species has been downloaded from the corresponding release from Ensembl for each division: [Archaea, Bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/release-49/species_EnsemblBacteria.txt), [protists](http://ftp.ensemblgenomes.org/pub/protists/release-49/species_EnsemblProtists.txt), [plants](http://ftp.ensemblgenomes.org/pub/plants/release-49/species_EnsemblPlants.txt), [Fungi](http://ftp.ensemblgenomes.org/pub/fungi/release-49/species_EnsemblFungi.txt), [invertebrates](http://ftp.ensemblgenomes.org/pub/metazoa/release-49/species_EnsemblMetazoa.txt), [vertebrates](https://ftp.ensembl.org/pub/release-98/species_EnsemblVertebrates.txt).  
+
+##### Genome quality
+The data from [NCBI genome](https://www.ncbi.nlm.nih.gov/genome/) was downloaded (20.6.2022) directly from [NCBI genome reports](https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/).
 
 ---
-#### The lengths for protein coding genes and proteins
-that we calculated can be accessed from our server: 
-
+#### The lengths of protein coding genes and proteins
+The length of any protein coding gene or protein for all the used species can be accessed from our server:   
 [https://genford.uv.es:5001/sharing/P79EcUfhE](https://genford.uv.es:5001/sharing/P79EcUfhE)
 
 ---
 ### main_tables
-For protein coding genes, proteins, and the intersection set between them (merged). The files are provided in standard [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) (*.tsv):
-- stat_protCodGenes.tsv (one header line + 33,627 entries)
-- stat_proteins.tsv (one header line + 9,913 entries)
-- stat_merged (one header line + 6,519 entries)  
+The files for protein coding genes, proteins, and the intersection set between them (merged) are provided in standard [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) (*.tsv):
+- stat_protCodGenes.tsv (header line + 33627 entries).  
+- stat_proteins.tsv (header line + 9913 entries).  
+- stat_merged (header line + 6519 entries).  
 
-Mean gene length vs. rho (fraction of nCDS within the protein coding genes). The entries are ordered by ascending mean gene length:  
-- rho_vs_gene.dat 
+Also, a file for the merged set with the mean gene length vs. rho (fraction of nCDS within the protein coding genes). The entries are ordered by ascending mean gene length:  
+- rho_vs_gene.dat (three header lines + 6519 entries).
 
-#### **Number of entries per taxonomical division:**  
-stat_protCodGenes.tsv (one header line + 33,627 entries):
-| counts | regnum               |  
-|-----:  |:----------           |
-| 31943  | bacteria<sup>*</sup> |
-| 237    | protists    |
-| 96     | plants      |
-| 1014   | fungi       |
-| 115    | metazoa     |
-| 222    | vertebrates |
+#### **Number of entries per taxonomical division:**
+stat_protCodGenes.tsv (header line + 33627 entries):  
+
+| counts | regnum                       |  
+|-----:  |:----------                   |
+| 31943  | prokaryotes<sup>*</sup>      |
+| 237    | protists                     |
+| 96     | plants                       |
+| 1014   | Fungi                        |
+| 115    | invertebrates                |
+| 222    | vertebrates                  |
 33627 entries in total  
 
-<sup>*</sup>In the annotation from Ensembl Bacteria includes also Archaea.
+<sup>*</sup>30714 Bacteria and 1229 Archaea.  
 
-stat_proteins.tsv (one header line + 9,913 entries):
-| counts | regnum |  
+stat_proteins.tsv (header line + 9,913 entries):  
+
+| counts | domain |  
 |-----:|:-------- |
-| 330  | archaea  |
-| 7997 | bacteria |
-| 1586 | eukaryota<sup>*</sup> |
+| 330  | Archaea  |
+| 7997 | Bacteria |
+| 1586 | Eukaryota<sup>*</sup> |
 9913 entries in total
 
-<sup>*</sup>In the annotations from Uniprot, Eukaryota includes all the clades described above: protists, plants, fungi, metazoa, vertebrates.  
+<sup>*</sup>In the annotations from Uniprot, Eukaryota includes: protists (156), plants (184), Fungi (772), invertebrates (226), and vertebrates (248). The 1586 Eukaryotes were classified using the taxonomic hierarchical classification (downloaded on 19.11.2021) provided by Uniprot and based in the NCBI taxonomy database (see [Lineage](https://www.uniprot.org/help/taxonomy)).
 
-stat_merged.tsv (one header line + 6,519 entries):
+stat_merged.tsv (header line + 6519 entries):  
+
 | counts | regnum      |  
 |-----:  |:----------  |
-| 5695   | bacteria    |
+| 5468   | Bacteria    |
+| 227    | Archaea     |
 | 91     | protists    |
 | 59     | plants      |
-| 533    | fungi       |
-| 49     | metazoa     |
+| 533    | Fungi       |
+| 49     | invertebrates |
 | 92     | vertebrates |
 6519 entries in total  
 
-#### extra_tables
-- species_Ensembl.tsv. For each division, the file containing the taxonomy ids of the different species annotated in Ensembl, [see above](./README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl), has been downloaded. The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally the file has been slimmed-down reducing its columns to cols 1, 2, and 4; that is, colloquial name of the species, species name, and taxonomy_id.  
-- genes.xlsx, proteins.xlsx, and genes_proteins_combined.xlsx. The main_tables in Microsoft Excel format, for the sake of those that prefer this software. From these tables, the main results can be reproduced.  
-- 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480
-- clade_fraction_per_mean_length.xlsx data to represent Figs. S8 and S9
-- Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Fig. S10
+#### suppl_tables
+- stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv. Assembly status for the genomes associated to the Ensembl protein coding genes entries. The file is composed by one header and 33637 entries (rows) with 3 columns: species, ensembl_assembly_accession, assembly_status.  
+
+- gene_length_vs_divergence_time.tsv. 
+
+- protCodGenes_averageLg_perGoOrg.txt.  Groups of organisms  with at least 20 species (to compare with proteomes) and the average $< L_{g} >$ of each group in base pairs.
+
+- proteins_averageLp_perGoOrg.txt. Groups of organisms with at least 20 species (to compare with proteomes) and the average $< L_{p} >$ of each group in amino acids.
+
+#### suppl_tables__extra
+- species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/borrador/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
+
+- 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480.
+
+- Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Extended Data Fig. 8.
 
 ---
 ### main_work
-- [protCodGenes_lognormDist.ipynb](./main_work/protCodGenes_lognormDist.ipynb) and [proteins_lognormDist.ipynb](./main_work/proteins_lognormDist.ipynb): the distributions of the lengths of the protein coding genes and proteins, respectively. That is Fig.1 (also S1, S2, and S7)  
-- [protCodGenes_taylorLaw.ipynb](./main_work/protCodGenes_taylorLaw.ipynb) and [proteins_taylorLaw.ipynb](./main_work/proteins_taylorLaw.ipynb): the observed Taylor law in the distributions of lengths for the different species (variance vs mean in $log_{10}$ representation). That is, Fig. 2  
-- [relation_proteins_protCodGenes_lengths.ipynb](./main_work/relation_proteins_protCodGenes_lengths.ipynb). Threshold in the relationship between mean protein and protein coding gene lengths for the different species for which we have records in both proteins and protein coding genes. See Fig. 3. 
-- [rho_nCDS_within_protCodGenes_lengths.ipynb](./main_work/rho_nCDS_within_protCodGenes_lengths.ipynb). Second-order phase transition in the density of non-coding sequences within protein coding genes. Each dot represents a single species for which we have records in both proteins and protein coding genes, see Fig. 4 
+- [protCodGenes_lognormDist.ipynb](https://github.com/emuro/borrador/blob/main/main_work/protCodGenes_lognormDist.ipynb) and [proteins_lognormDist.ipynb](https://github.com/emuro/borrador/blob/main/main_work/proteins_lognormDist.ipynb): the distributions of the lengths of the protein coding genes (genes hereafter) and proteins respectively. See Fig.1, also Extended Data Figs. 1 and 7.  
+
+- [protCodGenes_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/protCodGenes_taylorLaw.ipynb) and [proteins_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/proteins_taylorLaw.ipynb): the observed Taylor law in the distributions of the lengths of genes and proteins (variance vs mean in $log_{10}$ representation) for the different species. See Fig. 2 and Extended Data Fig. 4.  
+
+- [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb): threshold in the relationship between the mean gene length and the mean protein length for the different species. See Fig. 3 and Extended Data Fig. 9.  
+
+- [rho_nCDS_within_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/rho_nCDS_within_protCodGenes_lengths.ipynb). Second-order phase transition in the density ($\rho$) of non-coding sequences within protein coding genes with the mean gene length as control parameter. See Fig. 4. 
 - allowed_states.f. It calculates the allowed states of Fig. 4.
  
 #### suppl_work  
-- merged_taylorLaw.ipynb. The observed Taylor law in the merged set, for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.  
-- reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions compared in the figures. See, Figs. S3 and Fig. S4  
-- gene_growth_simulator.f for the sake of Fig. S5 and Fig. S10  
-- entropy.f: calculates the entropy of the allowed states of the unitary density on non-coding genetic sequences. See, Fig. S12  
-- variance.f: calculates the variance of the states of the unitary density on non-coding genetic sequences. See, Fig. S13  
+-  [mean_vs_time.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/mean_vs_time.ipynb). It is represented along the evolutionary history of life, the average the average of the mean gene lengths against their divergence time from LUCA (for the genomes that compose each group of organisms). Similarly, it is displayed the average (group of organisms) of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{\langle L \rangle}$ (nt) and $\overline{\langle log L \rangle}$ (nt) vs. divergence time from LUCA (My). See Extended Data Fig. 3.
+ 
+- [protCodGenes__2nd_order_momentum.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/protCodGenes__2nd_order_momentum.ipynb). The observed generalized Taylor law for the protein coding gene length's distributions for the different genomes:  ($\sigma_{g}^{2} + \langle L_{g} \rangle^{2}$) vs $\langle L_{g} \rangle$ in $log_{10}$ representation; the second order momentum $\langle L_{g}^{2} \rangle$. See Extended Data Fig. 4 that complements the main Fig 2.   
+
+- [proteins__2nd_order_momentum.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/proteins__2nd_order_momentum.ipynb). The same for proteins, that is the observed generalized Taylor law for the protein length's distributions for the different species:  $(\sigma_{p}^{2} + \langle L_{p}\rangle^{2})$ vs $\langle L_{p} \rangle$ in $log_{10}$ representation; the second order momentum $\langle L_{p}^{2} \rangle$. See Extended Data Fig. 4 that complements the main Fig 2.  
+
+- [protCodGenes_meanOfLog_logOfMean.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/protCodGenes_meanOfLog_logOfMean.ipynb). Comparison for the protein coding gene length's distributions for the different genomes between: the mean of the log of the lengths, $\langle log L \rangle$ , and the log of the mean of lengths, $log \langle L \rangle$, in $log_{10}$ representation; it corresponds to the Extended Data Fig. 5.  
+
+ - [average_mean_lengths__order.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a. Order of the average mean gene lengths for the different groups of organisms; Fig S6b. Same representations for the average protein gene lengths.  
+
+ - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths to Fungi (1014 genomes); it corresponds to the Extended Data Fig. 9a. Note: Fig. S9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
+
+- reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions compared in the figures. See Extended Data Fig. 2.  
+
+- entropy.f: calculates the entropy of the allowed states of the unitary density on non-coding genetic sequences. See, Extended Data Fig. 10.
+
+
+#### suppl_work__extra  
+
+- gene_growth_simulator.f: example of simulator of gene growth using a multiplicative stochastic factor.
+
+<!---
+- [merged_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.
+---!>
+
+
+
+
