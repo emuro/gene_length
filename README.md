@@ -106,7 +106,7 @@ stat_merged.tsv (header line + 6519 entries):
 6519 entries in total  
 
 #### suppl_tables
-- stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv. Assembly status for the genomes associated to the Ensembl protein coding genes entries. The file is composed by one header and 33637 entries (rows) with 3 columns: species, ensembl_assembly_accession, assembly_status.  
+- stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv. Assembly status for the genomes associated to the Ensembl protein coding genes entries. The file is composed by one header and 33627 entries (rows) with 3 columns: species, ensembl_assembly_accession, assembly_status.  
 
 - gene_length_vs_divergence_time.tsv. 
 
