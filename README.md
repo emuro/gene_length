@@ -26,7 +26,7 @@ our_mnt_dir + /data/compressed/ + "ftp.uniprot.org/pub/databases/uniprot/current
 our_mnt_dir is the local directory where the data were downloaded.
 
 #### Protein coding genes 
-The protein coding gene annotations were obtained from different webservers provided by Ensembl: [prokaryotes (Archaea, Bacteria)](https://bacteria.ensembl.org), [protists](https://protists.ensembl.org), [plants](https://plants.ensembl.org), [Fungi](http://fungi.ensembl.org/), [invertebrates](https://metazoa.ensembl.org), [vertebrates](https://ensembl.org/index.html). Any paraphyletic categorization in groups of organisms is already well established by Ensembl. 
+The protein coding gene annotations were obtained from different webservers provided by Ensembl: [prokaryotes (Archaea, Bacteria)](https://bacteria.ensembl.org), [protists](https://protists.ensembl.org), [plants](https://plants.ensembl.org), [Fungi](http://fungi.ensembl.org/), [invertebrates](https://metazoa.ensembl.org), [vertebrates](https://ensembl.org/index.html). The categorization in groups of organisms is well established by Ensembl. 
 
 
 | Ensembl ftp site by Kingdom/division                                          | Release            |  
