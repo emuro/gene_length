@@ -141,7 +141,7 @@ stat_merged.tsv (header line + 6519 entries):
 
 - [meanOfLog_logOfMean.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanOfLog_logOfMean.ipynb): for the gene length's distributions of the different genomes. Here we compare the mean of the log of the lengths, $\langle log L \rangle$ , and the log of the mean of lengths, $log \langle L \rangle$, in $log_{10}$ representation. It corresponds to the Extended Data Fig. 5.  
 
- - [average_mean_lengths__order.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a. Order of the average mean gene lengths for the different groups of organisms; Fig S6b. Same representations for the average protein gene lengths.  
+ - [average_mean_lengths__order.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a: order of the average mean gene lengths for the different groups of organisms. Extended Data Fig 6b. Same representation for the average protein lengths.  
 
  - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths to Fungi (1014 genomes); it corresponds to the Extended Data Fig. 9a. Note: Fig. S9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
 
