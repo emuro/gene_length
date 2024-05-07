@@ -129,7 +129,7 @@ stat_merged.tsv (header line + 6519 entries):
 
 - [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb): threshold in the relationship between the mean gene length and the mean protein length for the different species. See Fig. 3 and Extended Data Fig. 9.  
 
-- [rho_nCDS_within_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/rho_nCDS_within_protCodGenes_lengths.ipynb): second-order phase transition in the density ($\rho$) of non-coding sequences within protein coding genes with the mean gene length as control parameter. See Fig. 4. 
+- [rho_nCDS_within_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/rho_nCDS_within_protCodGenes_lengths.ipynb): second-order phase transition in the fraction ($\rho$) of non-coding sequences within protein coding genes with the mean gene length as control parameter. See Fig. 4. 
 - allowed_states.f. It calculates the allowed states of Fig. 4.
  
 #### suppl_work  
