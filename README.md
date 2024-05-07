@@ -119,7 +119,7 @@ stat_merged.tsv (header line + 6519 entries):
 
 - 480lognormal.dat. Initial seed for the gene growth model: 5000 genes, lognormally distributed (mean=480).
 
-- Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Extended Data Fig. 8.
+- Homo_sapiens_CDS_nCDS.xlsx. Data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Extended Data Fig. 8.
 
 ---
 ### main_work
