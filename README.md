@@ -108,7 +108,7 @@ stat_merged.tsv (header line + 6519 entries):
 #### suppl_tables
 - stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv. Assembly status for the genomes associated to the Ensembl protein coding genes entries. The file is composed by one header and 33627 entries (rows) with 3 columns: species, ensembl_assembly_accession, assembly_status.  
 
-- gene_length_vs_divergence_time.tsv. 
+- gene_length_vs_divergence_time.tsv. Average of $< L_{g} >$ and $< log L_{g} >$ of each group of organisms and their divergence time (Mya) obtained from [Timetree](https://timetree.org).
 
 - protCodGenes_averageLg_perGoOrg.txt.  Groups of organisms  with at least 20 species (to compare with proteomes) and the average $< L_{g} >$ of each group in base pairs.
 
