@@ -117,7 +117,7 @@ stat_merged.tsv (header line + 6519 entries):
 #### suppl_tables__extra
 - species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/gene_length/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
 
-- 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480.
+- 480lognormal.dat. Initial seed for the gene growth model: 5000 genes, lognormally distributed (mean=480).
 
 - Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Extended Data Fig. 8.
 
