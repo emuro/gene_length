@@ -143,7 +143,7 @@ stat_merged.tsv (header line + 6519 entries):
 
  - [average_mean_lengths__order.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a: order of the average mean gene lengths for the different groups of organisms. Extended Data Fig 6b: same kind of representation for the average protein lengths.  
 
- - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths to Fungi (1014 genomes); it corresponds to the Extended Data Fig. 9a. Note: Fig. S9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
+ - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths (Fungi; 1014 genomes). It corresponds to the Extended Data Fig. 9a. Note: Extended Data Fig. 9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
 
 - reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions compared in the figures. See Extended Data Fig. 2.  
 
