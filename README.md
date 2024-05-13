@@ -133,7 +133,7 @@ stat_merged.tsv (header line + 6519 entries):
 - allowed_states.f. It calculates the allowed states of Fig. 4.
  
 #### suppl_work  
--  [mean_vs_time.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/mean_vs_time.ipynb): average mean gene lengths are represented against their divergence time from LUCA. Similarly, it is displayed, for those groups of organisms, the average of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{\langle L \rangle}$ (nt) and $\overline{\langle log L \rangle}$ (nt) vs. divergence time from LUCA (My). See Extended Data Fig. 3.
+-  [mean_vs_time.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/mean_vs_time.ipynb): average mean gene lengths are represented against their divergence time from LUCA. Similarly, it is displayed for those groups of organisms, the average of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{\langle L \rangle}$ (nt) and $\overline{\langle log L \rangle}$ (nt) vs. divergence time from LUCA (My). See Extended Data Fig. 3.
  
 - [protCodGenes__2nd_order_momentum.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/protCodGenes__2nd_order_momentum.ipynb): the observed generalized Taylor law for the protein coding gene length's distributions for the different genomes:  ($\sigma_{g}^{2} + \langle L \rangle^{2}$) vs $\langle L \rangle$ in $log_{10}$ representation, where $\langle L^{2} \rangle$ is the second order momentum. See Extended Data Fig. 4 that complements the main Fig 2.   
 
