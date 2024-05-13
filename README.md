@@ -110,7 +110,7 @@ stat_merged.tsv (header line + 6519 entries):
 
 - gene_length_vs_divergence_time.tsv. Average of $< L >$ and $< log L >$ of each group of organisms and their divergence time (Mya) obtained from [Timetree](https://timetree.org).
 
-- protCodGenes_averageLg_perGoOrg.txt.  Groups of organisms  with at least 20 species (to compare with proteomes) and the average $< L >$ of each group in base pairs.
+- protCodGenes_averageL_perGoOrg.txt.  Groups of organisms  with at least 20 species (to compare with proteomes) and the average $< L >$ of each group in base pairs.
 
 - proteins_averageLp_perGoOrg.txt. Groups of organisms with at least 20 species (to compare with proteomes) and the average $< L_{p} >$ of each group in amino acids.
 
@@ -143,7 +143,7 @@ stat_merged.tsv (header line + 6519 entries):
 
  - [average_mean_lengths__order.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. 6a: order of the average mean gene lengths for the different groups of organisms. Extended Data Fig 6b: same kind of representation for the average protein lengths.  
 
- - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb): distribution of the mean gene lengths (Fungi; 1014 genomes). It corresponds to the Extended Data Fig. 9a. Note that the Extended Data Fig. 9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
+ - [meanL_distribution__perGofOrg.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/meanL_distribution__perGofOrg.ipynb): distribution of the mean gene lengths (Fungi; 1014 genomes). It corresponds to the Extended Data Fig. 9a. Note that the Extended Data Fig. 9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
 
 - reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions. See Extended Data Fig. 2.  
 
