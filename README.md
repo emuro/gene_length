@@ -1,17 +1,17 @@
 # The emergence of eukaryotes as an evolutionary algorithmic phase transition
 
-This repository contains the data and programs needed to reproduce the results reported in our article. Here, it is also described how to obtain the annotations from public repositories used in this work.  
+This repository contains the data and code needed to reproduce the results reported in our paper. We also describe how to obtain the annotations from public repositories used in this work.  
 
 **README.md** guides you all over this repository. **The structure of this repository is the next:**   
  - **main_tables** needed to reproduce the main figures.  
         - **suppl_tables** for the supplementary material.  
-        - **suppl_tables__extra** contains some extra data that can be helpful (ie. taxonomical ids).
+        - **suppl_tables__extra** contains some extra data that can be helpful (i.e. taxonomical ids).
 
- - **main_work** contains the programs needed to reproduce the main results.   
-        - **suppl_work**, where the programs for the supplementary material are.  
-        - **suppl_work__extra**, where some extra programs that complement the supplementary material are.
+ - **main_work** contains the code needed to reproduce the main results.   
+        - **suppl_work**, where the code for the supplementary material is.  
+        - **suppl_work__extra**, where some extra code that complement the supplementary material is.
 
-- **gl_lib**  contains libs used by programs of this repository
+- **gl_lib**  contains libraries of code used in this repository
 ---
 ### Data: the annotations were downloaded from public repositories
 
@@ -108,9 +108,9 @@ stat_merged.tsv (header line + 6519 entries):
 #### suppl_tables
 - stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv. Assembly status for the genomes associated to the Ensembl protein coding genes entries. The file is composed by one header and 33627 entries (rows) with 3 columns: species, ensembl_assembly_accession, assembly_status.  
 
-- gene_length_vs_divergence_time.tsv. Average of $< L_{g} >$ and $< log L_{g} >$ of each group of organisms and their divergence time (Mya) obtained from [Timetree](https://timetree.org).
+- gene_length_vs_divergence_time.tsv. Average of $< L >$ and $< log L >$ of each group of organisms and their divergence time (Mya) obtained from [Timetree](https://timetree.org).
 
-- protCodGenes_averageLg_perGoOrg.txt.  Groups of organisms  with at least 20 species (to compare with proteomes) and the average $< L_{g} >$ of each group in base pairs.
+- protCodGenes_averageLg_perGoOrg.txt.  Groups of organisms  with at least 20 species (to compare with proteomes) and the average $< L >$ of each group in base pairs.
 
 - proteins_averageLp_perGoOrg.txt. Groups of organisms with at least 20 species (to compare with proteomes) and the average $< L_{p} >$ of each group in amino acids.
 
@@ -133,9 +133,9 @@ stat_merged.tsv (header line + 6519 entries):
 - allowed_states.f. It calculates the allowed states of Fig. 4.
  
 #### suppl_work  
--  [mean_vs_time.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/mean_vs_time.ipynb): for the groups of organisms, it is represented the average of the mean gene lengths against their divergence time from LUCA. Similarly, it is displayed, for those groups of organisms, the average of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{\langle L_{g} \rangle}$ (nt) and $\overline{\langle log L_{g} \rangle}$ (nt) vs. divergence time from LUCA (My). See Extended Data Fig. 3.
+-  [mean_vs_time.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/mean_vs_time.ipynb): average mean gene lengths are represented against their divergence time from LUCA. Similarly, it is displayed, for those groups of organisms, the average of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{\langle L \rangle}$ (nt) and $\overline{\langle log L \rangle}$ (nt) vs. divergence time from LUCA (My). See Extended Data Fig. 3.
  
-- [protCodGenes__2nd_order_momentum.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/protCodGenes__2nd_order_momentum.ipynb): the observed generalized Taylor law for the protein coding gene length's distributions for the different genomes:  ($\sigma_{g}^{2} + \langle L_{g} \rangle^{2}$) vs $\langle L_{g} \rangle$ in $log_{10}$ representation, where $\langle L_{g}^{2} \rangle$ is the second order momentum. See Extended Data Fig. 4 that complements the main Fig 2.   
+- [protCodGenes__2nd_order_momentum.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/protCodGenes__2nd_order_momentum.ipynb): the observed generalized Taylor law for the protein coding gene length's distributions for the different genomes:  ($\sigma_{g}^{2} + \langle L \rangle^{2}$) vs $\langle L \rangle$ in $log_{10}$ representation, where $\langle L^{2} \rangle$ is the second order momentum. See Extended Data Fig. 4 that complements the main Fig 2.   
 
 - [proteins__2nd_order_momentum.ipynb](https://github.com/emuro/gene_length/blob/main/main_work/suppl_work/proteins__2nd_order_momentum.ipynb): the same for proteins. That is, the observed generalized Taylor law for the protein length's distributions for the different species:  $(\sigma_{p}^{2} + \langle L_{p}\rangle^{2})$ vs $\langle L_{p} \rangle$ in $log_{10}$ representation; where $\langle L_{p}^{2} \rangle$ is the second order momentum. See Extended Data Fig. 4 that complements the main Fig 2.  
 
